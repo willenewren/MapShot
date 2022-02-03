@@ -1,0 +1,67 @@
+
+
+<!-- Sidebar -->
+<!-- Sidebar -->
+<div class="sidebar_profile dynamic-sidebar" id="sidebar_profile">
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <i class="fas fa-caret-left"></i>
+  </div>
+>
+  <div class="menu-content">
+    <button type="button" name="button" class="btn activity-button" onclick="toggleActivity()">Activity</button>
+    <div class="dropdown" id="settings">
+       <button onclick="openSettings()" class="dropbtn"><i class="fas fa-cog"></i></button>
+       <div id="myDropdown" class="dropdown-content">
+         <a href="/customizeMap">Customize Map</a>
+         <a href="/settings">Settings</a>
+         <a href="/changePassword">Change Password</a>
+         <a href="#" id=logoutButton>Logout <i class="fas fa-sign-out-alt"></i></a>
+       </div>
+   </div>
+    <br>
+    <table style="margin:auto">
+        <tr class="blank_row"><td colspan="3"></td></tr>
+        <tr class="blank_row"><td colspan="3"></td></tr>
+        <tr>
+            <td style="text-align: center;">
+                <div alt="profile picture" id="profilePicture">
+            </td>
+        </tr>
+        <tr class="blank_row"><td colspan="3"></td></tr>
+        <tr>
+            <td id = "username" style="color:blue; font-size: medium; text-align: center;">
+            </td>
+        </tr>
+        <tr class="blank_row"><td colspan="3"></td></tr>
+        <tr>
+            <td id="user"style="color:black; font-size: large; text-align: center;">
+
+            </td>
+        </tr>
+        <tr class="user-stats">
+            <td id="posts">
+              <a href="#">18<br>Pins</a>
+            </td>
+            <td id="followers" >
+              <a href="#">246<br>Followers</a>
+            </td>
+            <td id="following" >
+              <a href="#">246<br>Following</a>
+            </td>
+        </tr>
+        <tr class="blank_row"><td colspan="3"></td></tr>
+        <tr>
+            <td style="color:black; font-size: small; text-align: center;">
+                <textarea rows="4" cols="30" readonly id="profile_TextBox">
+
+                </textarea>
+            </td>
+        </tr>
+    </table>
+    <h3 class="mb-4">Tags</h3>
+    <table id = 'tags'>
+
+    </table>
+  </div>
+
+</div>

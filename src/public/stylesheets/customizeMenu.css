@@ -1,0 +1,19 @@
+/*sidebar styling when fully expanded */
+#customizeSidebar {
+    min-width: 30%;
+    max-width: 30
+}
+
+.item {
+  display: inline-block;
+}
+
+
+#customizeSidebar span {
+  font-size: 3em;
+}
+
+#customizeSidebar p {
+  font-size: 3em;
+  font-family: "Times New Roman", Times, serif;
+}

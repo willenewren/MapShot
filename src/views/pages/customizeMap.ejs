@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+  <link rel="stylesheet" href="./stylesheets/customizeMenu.css">
+</head>
+
+<body>
+  <!-- Container for map and sidebar -->
+  <div class="wrapper">
+
+    <%- include('../partials/sidebar') %>
+    <%- include('../partials/customizeMenu') %>
+    <div class="m-0 p-0 " id="content">
+      <%- include('../partials/map') %>
+    </div>
+
+  </div>
+
+  <%- include('../partials/script') %>
+  <script src="../javascripts/mapTemplates.js" charset="utf-8"></script>
+  <script src="../javascripts/customizemap.js" charset="utf-8"></script>
+</body>
+
+
+</html>

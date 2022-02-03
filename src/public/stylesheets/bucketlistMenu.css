@@ -1,0 +1,18 @@
+/*sidebar styling when fully expanded */
+#bucketlistSidebar {
+    min-width: 30%;
+    max-width: 30%;
+    background: white;
+    color: black;
+}
+
+
+#bucketlistButton {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+.bucket-checkbox {
+
+}

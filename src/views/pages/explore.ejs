@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+  <link rel="stylesheet" href="/stylesheets/exploreMenu.css">
+  <link rel="stylesheet" href="/stylesheets/feedPin.css">
+</head>
+
+<body>
+
+  <%- include('../partials/addPin') %>
+  <!-- Container for map and sidebar -->
+  <div class="wrapper">
+
+    <%- include('../partials/sidebar') %>
+    <%- include('../partials/exploreMenu.ejs') %>
+    <%- include('../partials/map') %>
+
+  </div>
+
+  <%- include('../partials/script') %>
+  <script src="../javascripts/exploremap.js" charset="utf-8"></script>
+</body>
+
+
+</html>

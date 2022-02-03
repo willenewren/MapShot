@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head'); %>
+  <link rel="stylesheet" href="/stylesheets/bucketlistMenu.css">
+</head>
+
+<body>
+  <%- include('../partials/addPin') %>
+  <!-- Container for map and sidebar -->
+  <div class="wrapper">
+
+    <%- include('../partials/sidebar') %>
+    <%- include('../partials/bucketlistMenu') %>
+    <div id="content" class="m-0 p-0 ">
+      <%- include('../partials/map') %>
+    </div>
+
+  </div>
+  <%- include('../partials/script') %>
+  <script src="../javascripts/bucketlistmap.js" charset="utf-8"></script>
+</body>
+
+
+</html>

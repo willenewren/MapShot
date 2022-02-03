@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <%- include('../partials/head'); %>
+    <style>
+    body, html {
+      height: 100%
+      margin: 0;
+    }
+    #bg{
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to bottom right, Teal, YellowGreen);
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+
+    }
+    form.login {
+      text-align: center;
+    }
+    div.rcorners {
+      position: relative;
+          background: #FFFFFF;
+      margin: auto;
+          margin-top: 150px;
+      border-radius: 25px;
+      border: 2px solid #FFFFFF;
+      padding: 20px;
+      width: 40%;
+      height: 50%;
+    }
+
+  input[type=text]{
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+       border-radius: 20px;
+       box-shadow: 1px 1px 5px #555 inset;
+       border: 1px solid #FFFFFF;
+       color: #a0d18c;
+       width: 250px;
+       height: 30px;
+       padding-left: 10px;
+       margin-bottom: 20px;
+
+      }
+  input[type=password]{
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+       border-radius: 20px;
+       box-shadow: 1px 1px 5px #555 inset;
+       border: 1px solid #FFFFFF;
+       color: #a0d18c;
+       width: 250px;
+       height: 30px;
+       margin-bottom: 30px;
+       padding-left: 10px;
+      }
+  button[type=submit]{
+  margin-bottom: 30px;
+  border-radius: 12px;
+  }
+  </style>
+  </head>
+  <body>
+    	<div id="bg"></div>
+      <div class="rcorners">
+        <form class="login" action="/user/login" method="post">
+
+          <h1>MapShot</h1>
+          <div>
+          <label class="username"></label>
+          <input type="text" id="username" placeholder="Username" name="username" required>
+          </div>
+
+          <div>
+          <label for="password">  </label>
+          <input type="password" id="password" placeholder="Password" name="password" required>
+          </div>
+
+          <div class="signin">
+          <button type="submit">Sign in</button>
+          </div>
+
+          <div>
+          <label>New to MapShot?
+            <a href="/register">Sign up</a>
+          </label>
+          </div>
+
+        </form>
+        <ul style="list-style: none;">
+          <% for(var i=0; i<errors.length; i++) { %>
+            <li style="color:red">
+              <%= errors[i] %>
+            </li>
+          <% } %>
+        </ul>
+       </div>
+
+
+    <footer><%- include('../partials/footer'); %></footer>
+  </body>
+</html>

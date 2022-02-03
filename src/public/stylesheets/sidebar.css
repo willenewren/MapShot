@@ -1,0 +1,128 @@
+/*sidebar styling when fully expanded */
+#sidebar {
+    min-width: 10%;
+    max-width: 10%;
+    height: 100vh;
+    background: #3B5284;
+    color: #fff;
+    z-index: 100; /* should always be visible*/
+    overflow-y: scroll!important;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #3B5284;
+    text-align: center;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a  {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-left: 0px;
+    font-size: 2em;
+    display: inline-block;
+    margin-left: 25%;
+    text-align: center;
+    color: white;
+    background: #3B5284;
+}
+
+#sidebar li {
+  position: relative;
+}
+
+
+
+#sidebar ul li a:hover :hover{
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #3B5284;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+
+a[data-toggle="collapse"] [data-toggle="collapse"]{
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.notification-bubble {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  top: 39%;
+}
+/*toggle button*/
+#sidebar button {
+  display: none;
+}
+
+#profileSubmenu a {
+  font-size: 1em!important;
+}
+
+#sidebar h3 {
+  overflow:hidden;
+}
+@media (max-width: 768px) {
+    /* 80px and its content aligned to centre. Pushing it off the screen with the
+       negative left margin
+    */
+    #sidebar.active {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -80px !important;
+    }
+
+
+    /* Reappearing the sidebar on toggle button click */
+    #sidebar {
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 100%;
+      margin-left: 0;
+      top: 0;
+      left: 0;
+    }
+    /*diplay toggle on sidebar if mobile*/
+    #sidebar button {
+        display: block;
+        float: right;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 3px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 6px;
+        cursor: pointer;
+        text-align: center;
+        color:black;
+    }
+
+}

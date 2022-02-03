@@ -1,0 +1,22 @@
+<!--Partial for screen to add a new pin-->
+
+<div class="" id="overlay-back">
+  <div id="addNewPinContainer" class="add-window">
+    <span id="closeAddPin"><i class="fas fa-times"></i></span>
+    <h2>Add Pin</h2>
+    <form action="/pin" enctype="multipart/form-data" method="post" id="newPinForm">
+      <input type="text1" id="title" name="title" placeholder="Title">
+          <input type="date" id="date" name="date" placeholder="Date">
+          <input type="text1" id="location_searchbox" name="location_name" placeholder="Add Location">
+          <textarea id="caption" name="descr" placeholder="Write a Caption..." rows="30" cols="50"></textarea>
+          <div class="image image-preview" id="imagePreview">
+            <img class="image-preview-img">
+            <span class="image-preview-text"><i class="fas fa-plus"></i></span>
+          </div>
+          <input type="text2" id="tag" name="tag" placeholder="Add Tags">
+          <input type="file" name="images" accept="image/*" style="display: none" id="imageInput" multiple/><br>
+          <button class="button button1" type="button" id="submitButton">PUSH PIN</button>
+    </form>
+
+  </div>
+</div>
